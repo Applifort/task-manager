@@ -4,6 +4,8 @@ if ENV['RAILS_ENV'] == 'test'
   SimpleCov.start 'rails'
   puts "required simplecov"
 end
+require 'coveralls'
+Coveralls.wear!
 
 require_relative '../config/environment'
 require 'rails/test_help'
