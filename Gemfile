@@ -63,5 +63,5 @@ gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) support
 gem "twitter-bootstrap-rails"
 gem "jquery-rails"
 
-gem 'simplecov', require: false, group: :test
-gem 'coveralls', require: false
+gem 'simplecov', '0.17.1', require: false, group: :test
+gem 'coveralls', '0.7.1', require: false, group: :test
