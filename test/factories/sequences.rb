@@ -12,7 +12,7 @@ FactoryBot.define do
   	"password#{n}"
   end
   sequence :string do |n|
-  	"password#{n}"
+  	"string#{n}"
   end
   sequence :name do |n|
   	"name#{n}"
