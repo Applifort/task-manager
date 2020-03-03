@@ -26,6 +26,4 @@ FactoryBot.define do
   sequence :expired_at do |n|
   	"expired_at#{n}"
   end
-
-
 end
