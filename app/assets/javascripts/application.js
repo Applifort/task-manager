@@ -9,6 +9,6 @@
 //= require twitter/bootstrap
 //= require_tree .
 
-$(function(){
-  /* Your JavaScript goes here... */
-});
+// $(function(){
+/* Your JavaScript goes here... */
+// });
