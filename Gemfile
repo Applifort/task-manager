@@ -68,3 +68,5 @@ gem 'coveralls', '0.7.1', require: false, group: :test
 
 gem 'bullet', group: 'development'
 gem 'rollbar'
+
+gem 'newrelic_rpm'
