@@ -65,3 +65,6 @@ gem "jquery-rails"
 
 gem 'simplecov', '0.17.1', require: false, group: :test
 gem 'coveralls', '0.7.1', require: false, group: :test
+
+gem 'bullet', group: 'development'
+gem 'rollbar'
