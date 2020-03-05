@@ -31,7 +31,7 @@ const data = {
         },
     ],
 };
-console.log ('hi')
+
 export default class TasksBoard extends React.Component {
     render() {
         return <Board data={data} />;
