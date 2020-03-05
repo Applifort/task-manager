@@ -4,8 +4,9 @@ class Admin::UsersController < Admin::ApplicationController
   end
 
   def index
+    quantity = 10
     @q = User.ransack(params[:q])
-    @users = @q.result.order(:type).order(:id).page(params[:page]).per(10)
+    @users = @q.result.order(:type).order(:id).page(params[:page]).per(quantity)
   end
 
   def edit
