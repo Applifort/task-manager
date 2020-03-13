@@ -3,6 +3,11 @@ version: '3.7'
 services:
   web:
     build: .
+    command: >
+      bash -c "bundle install &&
+               yarn install &&
+               bundle exec foreman start"
+
     depends_on:
       - db
     volumes:

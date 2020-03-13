@@ -78,3 +78,5 @@ gem 'active_model_serializers'
 
 gem 'webpacker-react'
 gem 'react-rails'
+
+gem 'foreman'

@@ -1,3 +1,4 @@
+import { hot } from 'react-hot-loader/root';
 import React from 'react';
 import Board from 'react-trello';
 
@@ -32,8 +33,10 @@ const data = {
     ],
 };
 
-export default class TasksBoard extends React.Component {
+class TasksBoard extends React.Component {
     render() {
         return <Board data={data} />;
     }
 }
+
+export default hot(TasksBoard);
