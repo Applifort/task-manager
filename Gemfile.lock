@@ -141,6 +141,7 @@ GEM
     msgpack (1.3.3)
     multi_json (1.14.1)
     netrc (0.11.0)
+    newrelic_rpm (6.9.0.363)
     nio4r (2.5.2)
     nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
@@ -194,6 +195,7 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
+    rollbar (2.24.0)
     rubocop (0.79.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
@@ -305,9 +307,11 @@ DEPENDENCIES
   jquery-rails
   less-rails
   listen (>= 3.0.5, < 3.2)
+  newrelic_rpm
   pg (>= 0.18, < 2.0)
   puma (~> 4.1)
   rails (~> 6.0.2, >= 6.0.2.1)
+  rollbar
   rubocop
   sass-rails (>= 6)
   selenium-webdriver
