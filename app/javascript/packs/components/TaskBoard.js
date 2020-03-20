@@ -76,9 +76,11 @@ class TasksBoard extends React.Component {
     }
   
     fetchLine(state, page = 1) {
-      return fetch('GET', window.Routes.api_v1_tasks_path({ q: { state_eq: state }, page: page, per_page: 10, format: 'json' })).then(({data}) => {
-        return data;
-      })
+      return fetch('GET', window.Routes
+        .api_v1_tasks_path({ q: { state_eq: state }, page, per_page: 10, format: 'json' }))
+        .then(({data}) => {
+            return data;
+        })
     }
   
     render() {
