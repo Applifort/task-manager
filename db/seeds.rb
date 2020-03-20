@@ -15,3 +15,7 @@ admin.save
   u.password = "#{i}"
   u.save
 end
+
+2.times do |i|
+  Task.create(author: 1, name: "test#{i}", description: "TEST TEST", state: "new_task")
+end
