@@ -3,6 +3,11 @@ version: '3.7'
 services:
   web:
     build: .
+    command: >
+      bash -c "bundle install &&
+               yarn install &&
+               bundle exec foreman start"
+
     depends_on:
       - db
     volumes:
@@ -11,6 +16,7 @@ services:
       - bundle_cache:/bundle_cache
     ports:
       - 3000:3000
+      - 3035:3035
     environment:
       - BUNDLE_PATH=/bundle_cache
       - GEM_HOME=/bundle_cache
