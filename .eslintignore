@@ -1,1 +1,2 @@
 # .eslintignore
+app/assets/javascripts/*
