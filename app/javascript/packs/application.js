@@ -6,8 +6,17 @@ import WebpackerReact from 'webpacker-react';
 import TaskBoard from './components/TaskBoard';
 
 // require('@rails/ujs').start()
-require('@rails/activestorage').start();
-require('../channels');
+// require('@rails/activestorage').start();
+// require('../channels');
+
+import Routes from "../../assets/javascripts/routes";
+
+// Routes.configure({
+//   default_url_options: { format: "json" }
+// });
+// Routes.config();
+
+window.Routes = Routes;
 
 WebpackerReact.setup({ TaskBoard });
 

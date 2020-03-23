@@ -14,7 +14,7 @@ class Task < ApplicationRecord
     event :archive do
       transition [:new_task, :released] => :archived
     end
-    event :to_in_qa do
+    event :to_qa do
       transition :in_development => :in_qa
     end
     event :to_review do

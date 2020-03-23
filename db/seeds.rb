@@ -16,6 +16,5 @@ admin.save
   u.save
 end
 
-2.times do |i|
-  Task.create(author: 1, name: "test#{i}", description: "TEST TEST", state: "new_task")
-end
+Task.create(author: admin, name: "test", description: "TEST TEST", state: "new_task")
+
