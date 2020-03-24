@@ -15,3 +15,6 @@ admin.save
   u.password = "#{i}"
   u.save
 end
+
+Task.create(author: admin, name: "test", description: "TEST TEST", state: "new_task")
+
